@@ -1,0 +1,10 @@
+Complete the function strdupe() in strdupe.c 
+The comments in the body of strdupe() specify the tasks. The purpose of this assignment is to make you practice pointer arithmetic. So, do not use array indexing.
+
+Compile both the files and link. You can test your code by executing:
+
+prompt> ./a4Wrapper "Did it dup?"
+
+Stress test your program with several input strings of varied lengths.
+
+Submit (only) strdupe.c on elearning. Do not submit a4Wrapper.c
