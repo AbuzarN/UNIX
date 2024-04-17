@@ -6,5 +6,3 @@ Compile both the files and link. You can test your code by executing:
 prompt> ./a4Wrapper "Did it dup?"
 
 Stress test your program with several input strings of varied lengths.
-
-Submit (only) strdupe.c on elearning. Do not submit a4Wrapper.c
