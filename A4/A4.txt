@@ -1,0 +1,2 @@
+The purpose of this assignment is to gain insight into the working of pointers.
+Complete the 5 tasks as instructed in the comments in ptr.c
