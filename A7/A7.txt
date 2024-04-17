@@ -1,0 +1,30 @@
+Compile these source files using the following command:
+	gcc -Wall -o tok tok.c
+
+There should be no errors or warnings.
+
+Below is the sample input/output of the program. 
+
+{cslinux2:~/3377/hw} ./tok
+Enter the string: Hey bro. How are you?
+sentence 1: tokens 2
+sentence 2: tokens 3
+Number of sentences: 2
+Enter the string: I am fine. Thanks.
+sentence 1: tokens 3
+sentence 2: tokens 1
+Number of sentences: 2
+Enter the string:			// empty sentence, should recognize this case and print no output. Prompt to enter the string.
+Enter the string: BYE
+
+Test your program thoroughly with long inputs.
+
+Submit tok.c on elearning. 
+
+Practice problem (no need to submit).
+
+Complete this problem before you start to work on part 3 of project 1. Solving this problem will also help you in Exam 1 to answer questions related to pipes.
+
+The program ~sxa173731/3377/hw/pipecmd.c executes piped command 'cat <filename> | wc', where filename is the argument to cat.
+
+Extend pipecmd.c to execute 'cat <filename> | cat | wc'.
