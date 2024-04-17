@@ -1,0 +1,65 @@
+Do not modify main(). Complete tree() function.
+The height of the tree is passed as a command line argument to the program. All internal nodes of the tree creates two children (threads), wait for them to complete, and then return. Leaf nodes returns without creating any child thread. The output should be similar to shown below (output order may vary).
+
+{cslinux2:~/3377/hw} ./btThread 2                    
+Int. Thread (id: 47478) at height 2
+Int. Thread (id: 47479) at height 1
+Int. Thread (id: 47480) at height 1
+Leaf Thread (id: 47481) at height 0
+Leaf Thread (id: 47482) at height 0
+Leaf Thread (id: 47483) at height 0
+Leaf Thread (id: 47484) at height 0
+
+
+In the above output, id is the thread id. (Use gettid() in the starter code to get the thread id). Below are 2 more sample outputs.
+
+
+{cslinux2:~/3377/hw} ./btThread 3 
+Int. Thread (id: 47639) at height 3
+Int. Thread (id: 47640) at height 2
+Int. Thread (id: 47641) at height 2
+Int. Thread (id: 47642) at height 1
+Int. Thread (id: 47644) at height 1
+Int. Thread (id: 47643) at height 1
+Int. Thread (id: 47645) at height 1
+Leaf Thread (id: 47647) at height 0
+Leaf Thread (id: 47646) at height 0
+Leaf Thread (id: 47648) at height 0
+Leaf Thread (id: 47649) at height 0
+Leaf Thread (id: 47650) at height 0
+Leaf Thread (id: 47651) at height 0
+Leaf Thread (id: 47652) at height 0
+Leaf Thread (id: 47653) at height 0
+
+{cslinux3:~/3377/hw} ./btThread 4
+Int. Thread (id: 6646) at height 4
+Int. Thread (id: 6647) at height 3
+Int. Thread (id: 6648) at height 3
+Int. Thread (id: 6649) at height 2
+Int. Thread (id: 6650) at height 2
+Int. Thread (id: 6651) at height 2
+Int. Thread (id: 6652) at height 1
+Int. Thread (id: 6653) at height 2
+Int. Thread (id: 6654) at height 1
+Int. Thread (id: 6655) at height 1
+Int. Thread (id: 6656) at height 1
+Leaf Thread (id: 6657) at height 0
+Int. Thread (id: 6658) at height 1
+Int. Thread (id: 6659) at height 1
+Int. Thread (id: 6660) at height 1
+Leaf Thread (id: 6661) at height 0
+Int. Thread (id: 6662) at height 1
+Leaf Thread (id: 6663) at height 0
+Leaf Thread (id: 6664) at height 0
+Leaf Thread (id: 6665) at height 0
+Leaf Thread (id: 6666) at height 0
+Leaf Thread (id: 6667) at height 0
+Leaf Thread (id: 6668) at height 0
+Leaf Thread (id: 6669) at height 0
+Leaf Thread (id: 6670) at height 0
+Leaf Thread (id: 6671) at height 0
+Leaf Thread (id: 6672) at height 0
+Leaf Thread (id: 6674) at height 0
+Leaf Thread (id: 6673) at height 0
+Leaf Thread (id: 6675) at height 0
+Leaf Thread (id: 6676) at height 0
