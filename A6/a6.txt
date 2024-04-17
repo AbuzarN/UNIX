@@ -1,0 +1,37 @@
+Compile these source files using the following command:
+	gcc db.c dbWrapper.c -Wall -o db 
+
+Then execute by typing
+ ./db str
+ 
+If str is not present open() will create. If 'str' exists, then it will be not be truncated.
+
+Below is the sample input/output of the program. Note that the records need not be added sequentially. There can be holes in between valid records. Test your program thoroughly.
+
+{babbage:~/3377/io} ./db str
+Enter your choice (1 to put, 2 to get, 0 to quit): 1
+Enter the student name: Abdul Wallace
+Enter the student id: 47678
+Enter the record index: 0
+Enter your choice (1 to put, 2 to get, 0 to quit): 1
+Enter the student name: Lakshmi Wong
+Enter the student id: 34980
+Enter the record index: 9
+Enter your choice (1 to put, 2 to get, 0 to quit): 2
+Enter the record index: 9
+Student name Lakshmi Wong
+Student id: 34980
+Record index: 9
+Enter your choice (1 to put, 2 to get, 0 to quit): 0
+
+Another run:
+{babbage:~/3377/io} ./db str
+Enter your choice (1 to put, 2 to get, 0 to quit): 2
+Enter the record index: 9
+Student name Lakshmi Wong
+Student id: 34980
+Record index: 9
+Enter your choice (1 to put, 2 to get, 0 to quit): 2
+Enter the record index: 20
+//index is out of bounds. print appropriate error message
+Enter your choice (1 to put, 2 to get, 0 to quit): 0
