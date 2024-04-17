@@ -1,0 +1,19 @@
+Compile these source file using the following command:
+	gcc -Wall -o map map.c
+
+There should be no errors or warnings.
+
+Usage:
+	./map filename block_num
+where filename is the name of the input file and block_num is the block in which your program needs to find the minimum
+
+Below is the sample input/output of the program. 
+
+{cslinux2:~/3377/hw} ./map map_tc 5
+minimum value in block 5 is 121
+{cslinux2:~/3377/hw} ./map map_tc 121
+minimum value in block 121 is 5
+{cslinux2:~/3377/hw} ./map map_tc 10
+minimum value in block 10 is 116
+{cslinux2:~/3377/hw} ./map map_tc 100
+minimum value in block 100 is 26
